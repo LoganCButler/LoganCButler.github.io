@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Projects</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -182,7 +182,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <!--<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -192,8 +192,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                   
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -234,7 +233,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Footer -->
     <footer class="text-center">
@@ -243,32 +242,26 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p><i class="fa fa-fw fa-home"></i>Tampa
+                            <br>Florida</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/logancbutler" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>                          
+                            <li>
+                                <a href="https://www.linkedin.com/in/logan-butler-7569b8118" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="https://github.com/LoganCButler/" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>Why This Site</h3>
+                        <p>This is an easy place to store and showcase prjects. </p>
                     </div>
                 </div>
             </div>
@@ -277,7 +270,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; Logan Butler 2016
                     </div>
                 </div>
             </div>
@@ -304,21 +297,230 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Calculator - Console App</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/calculator.png" class="img-responsive img-centered" alt="">
+                            <div class="text-left">
+                                <!-- Code Description Goes Here  http://markup.su/highlighter/ using Cobalt Style-->
+
+                                <!--Console Logic-->
+
+                                <pre style="background:#002240;color:#fff"><span style="color:#ff9d00">using</span> System;
+<span style="color:#ff9d00">using</span> System.Collections.Generic;
+<span style="color:#ff9d00">using</span> System.Linq;
+<span style="color:#ff9d00">using</span> System.Text;
+<span style="color:#ff9d00">using</span> System.Threading.Tasks;
+<span style="color:#ff9d00">using</span> App;
+<span style="color:#ffee80">namespace</span> <span style="color:#fd0">Calculator</span>
+<span style="color:#e1efff">{</span>
+                                <span style="color:#ffee80">class</span> <span style="color:#fd0">Program</span>
+                                <span style="color:#e1efff">{</span>        
+        public static void Main(string[] args)
+        {
+            
+            string continueOn = "y";
+            do
+            {
+                CalculatorLogic MathProblem = new CalculatorLogic();
+                MathProblem.GetFirstNumber();
+                MathProblem.GetStringOfOperations();
+                MathProblem.DoTheMath();
+                Console.WriteLine(MathProblem.StringAnswerGenerator());
+                
+                Console.WriteLine("Would you like to do another problem?\n y: yes, any key: no");
+                continueOn = Console.ReadLine();
+                                <span style="color:#e1efff">}</span> while (continueOn.Contains("y"));
+                                <span style="color:#e1efff">}</span>      
+    }
+}
+</pre>
+
+
+
+                                <!--calculator Logic-->
+                                <pre style="background:#002240;color:#fff"><span style="color:#ff9d00">using</span> System;
+<span style="color:#ff9d00">using</span> System.Collections.Generic;
+<span style="color:#ff9d00">using</span> System.Linq;
+<span style="color:#ff9d00">using</span> System.Text;
+<span style="color:#ff9d00">using</span> System.Threading.Tasks;
+<span style="color:#ffee80">namespace</span> <span style="color:#fd0">App</span>
+<span style="color:#e1efff">{</span>
+  
+    public <span style="color:#ffee80">class</span> <span style="color:#fd0">CalculatorLogic</span>
+                                <span style="color:#e1efff">{</span>
+        private  bool equalPressed = false;
+        private string stringOutput;
+        public List&lt;char> operationList = new List&lt;char> { <span style="color:#e1efff">}</span>;
+        public List&lt;double> numberList = new List&lt;double> { <span style="color:#e1efff">}</span>;
+        public <span style="color:#ffee80">double</span> lastAnswer { get; set; }
+        public <span style="color:#ffee80">double</span><span style="color:#e1efff"> </span><span style="color:#fd0">DoTheMath</span>()
+        {
+            lastAnswer = numberList[0];
+            for <span style="color:#e1efff">(</span>var i = 0; i &lt; numberList<span style="color:#ccc">.Count</span>-1; i++)
+            {
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>Calc(</span>numberList[i+1], operationList[i]);
+            }
+            return lastAnswer;
+        }
+        public <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">Calc</span>(double a,  char operation)
+        {
+            switch <span style="color:#e1efff">(</span>operation)
+            {
+                case '+':
+                    lastAnswer += a;
+                    break;
+                case '-':
+                    lastAnswer -= a;
+                    break;
+                case '*':
+                    lastAnswer *= a;
+                    break;
+                case '/':
+                    lastAnswer /= a;
+                    break;
+                case '=':                    
+                    break;
+            }
+        }
+        public string<span style="color:#e1efff"> </span><span style="color:#fd0">StringAnswerGenerator</span>()
+        {
+            stringOutput = "'Your problem of";
+            stringOutput += " " + numberList[0].<span style="color:#ffee80"><span style="color:#ffb054">ToString</span>(</span>);
+            for <span style="color:#e1efff">(</span>var i = 0; i &lt; numberList<span style="color:#ccc">.Count</span> - 1; i++)
+            {
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>stringAnswerMaker(</span>numberList[i + 1], operationList[i]);
+            }
+            stringOutput += " = " + lastAnswer.<span style="color:#ffee80"><span style="color:#ffb054">ToString</span>(</span>);
+            return stringOutput;
+        }
+        private <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">stringAnswerMaker</span>(double num, char op)
+        {
+            stringOutput += " "+ op.<span style="color:#ffee80"><span style="color:#ffb054">ToString</span>(</span>);
+            stringOutput += " " + num.<span style="color:#ffee80"><span style="color:#ffb054">ToString</span>(</span>);
+        }
+        public  <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">GetFirstNumber</span>()
+        {
+            try
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter in your first number.");
+                string hold = Console.<span style="color:#ffee80"><span style="color:#ffb054">ReadLine</span>(</span>);
+                double value;
+                if <span style="color:#e1efff">(</span>double.<span style="color:#ffee80"><span style="color:#ffb054">TryParse</span>(</span>hold, out value))
+                {
+                    numberList.<span style="color:#ffee80"><span style="color:#ffb054">Add</span>(</span>value);
+                }
+                else
+                {
+                    throw new<span style="color:#ffee80"><span style="color:#e1efff"> </span>NotImplementedException(</span>);
+                }
+            }
+            catch
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter only one number right now.");
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>GetFirstNumber(</span>);
+            }
+        }
+        public <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">GetStringOfOperations</span>()
+        {
+<span style="color:#ffee80"><span style="color:#e1efff">            </span>GetOperation(</span>);
+            while <span style="color:#e1efff">(</span>false == equalPressed)
+            {
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>GetSecondNumber(</span>);
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>GetStringOfOperations(</span>);
+            }
+            if <span style="color:#e1efff">(</span>equalPressed == true)
+            {
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>DoTheMath(</span>);
+            }
+        }
+        private  <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">GetSecondNumber</span>()
+        {
+            try
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter in a number.");
+                string hold = Console.<span style="color:#ffee80"><span style="color:#ffb054">ReadLine</span>(</span>);
+                double value;
+                if <span style="color:#e1efff">(</span>double.<span style="color:#ffee80"><span style="color:#ffb054">TryParse</span>(</span>hold, out value))
+                {
+                    numberList.<span style="color:#ffee80"><span style="color:#ffb054">Add</span>(</span>value);
+                }
+                else
+                {
+                    throw new<span style="color:#ffee80"><span style="color:#e1efff"> </span>NotImplementedException(</span>);
+                }
+            }
+            catch
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter only one number right now.");
+<span style="color:#ffee80"><span style="color:#e1efff">                </span>GetSecondNumber(</span>);
+            }
+        }
+        private  <span style="color:#ffee80">void</span><span style="color:#e1efff"> </span><span style="color:#fd0">GetOperation</span>()
+        {
+            try
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter in a operation");
+                char hold = Convert.<span style="color:#ffee80"><span style="color:#ffb054">ToChar</span>(</span>Console.<span style="color:#ffee80"><span style="color:#ffb054">ReadLine</span>(</span>));
+                if <span style="color:#e1efff">(</span><span style="color:#ffee80"><span style="color:#ffb054">ValidOperatorCheck</span>(</span>hold))
+                {
+                    operationList.<span style="color:#ffee80"><span style="color:#ffb054">Add</span>(</span>hold);
+                }
+                else
+                {
+                    throw new<span style="color:#ffee80"><span style="color:#e1efff"> </span>NotImplementedException(</span>);
+                }
+                if <span style="color:#e1efff">(</span>hold == '=')
+                {
+                    equalPressed = true;
+                }
+            }
+            catch
+            {
+                Console.<span style="color:#ffee80"><span style="color:#ffb054">WriteLine</span>(</span>"Please enter only one of these operations: +  -  *  / \n Choose = to end and find the answer");
+                    <span style="color:#ffee80"><span style="color:#e1efff">    </span>GetOperation(</span>);
+            }
+        }
+        private  <span style="color:#ffee80">bool</span><span style="color:#e1efff"> </span><span style="color:#fd0">ValidOperatorCheck</span>(char hold)
+        {
+            if <span style="color:#e1efff">(</span>hold.<span style="color:#ffee80"><span style="color:#ffb054">Equals</span>(</span>'+'))
+            {
+                return true;
+            }
+            if <span style="color:#e1efff">(</span>hold.<span style="color:#ffee80"><span style="color:#ffb054">Equals</span>(</span>'-'))
+            {
+                return true;
+            }
+            if <span style="color:#e1efff">(</span>hold.<span style="color:#ffee80"><span style="color:#ffb054">Equals</span>(</span>'*'))
+            {
+                return true;
+            }
+            if <span style="color:#e1efff">(</span>hold.<span style="color:#ffee80"><span style="color:#ffb054">Equals</span>(</span>'/'))
+            {
+                return true;
+            }
+            if <span style="color:#e1efff">(</span>hold.<span style="color:#ffee80"><span style="color:#ffb054">Equals</span>(</span>'='))
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+}
+</pre>
+
+                                <!-- End code Descriptions -->
+                            </div>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a href="#">April 2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a href="#">.Net Development</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -525,8 +727,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!--<script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>-->
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
