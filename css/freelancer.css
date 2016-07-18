@@ -505,6 +505,5 @@ fieldset[disabled] .btn-success.active {
 }
 
 .headshot {
-    width:50%;
-    height:auto;
+    width:230px;
 }
