@@ -503,3 +503,8 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+.headshot {
+    width:50%;
+    height:auto;
+}
