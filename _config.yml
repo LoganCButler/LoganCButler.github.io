@@ -1,0 +1,172 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Logan Butler
+title: Solution Architect
+# email: none
+website: www.github.com/logancbutler
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: facespics
+github_username:  logancbutler
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: logancbutler
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: https://avatars0.githubusercontent.com/u/3878140?v=3&s=460
+about_content: | # this will include new lines to allow paragraphs
+  Technical Architect with experience in microservice architecture and scaled scrum. Familiar with all aspects of the development lifecycle, including requirement analysis, design, development, and production support. Expertise in enterprise software used in public accounting. Highly skilled in cloud (Azure), front end, back end, and database technologies. Strong interpersonal skills and a history of developing team members to greater potential.
+
+  I am most skilled in: <mark>Azure</mark> technologies.
+
+content:
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: top-middle
+  #       title: Super awesome project
+  #       link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  #       description: | # this will include new lines to allow paragraphs
+  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: FM Global
+        link: https://www.fmglobal.com
+        link_text: fmglobal.com
+        sub_title: Solutions Architect
+        caption: April 2022 - Present
+        quote: >
+          Resilience is for everyone.
+        description: | # this will include new lines to allow paragraphs
+            In my current role as a Solution Architect at FM Global, a premier global property insurer, I exercise a leadership position in designing and implementing business-critical systems with an emphasis on Azure cloud technologies, Kubernetes clusters, and global distributed systems.
+
+            My key responsibilities and experience include:
+            * Providing technical leadership across multiple teams, steering the successful implementation of Azure-based cloud solutions and Kubernetes clusters.
+            * Leveraging my expertise in global distributed systems and data to create efficient and effective solutions that meet evolving business requirements.
+            * Facilitating the transition of data from on-premises architectures to the cloud, ensuring a seamless and secure transfer that complies with enterprise guidelines.
+            * Defining and refining system and application architecture, with a particular focus on maintaining security, performance, and adaptability.
+            * Guiding teams through the complexities of global systems and data movement, offering mentorship and fostering a supportive and collaborative software engineering community.
+
+      - layout: left
+        title: AgileThought
+        link: https://agilethought.com
+        link_text: agilethought.com
+        sub_title: Technical Architect
+        caption: March 2017 - April 2022
+        # quote: >
+        #   Resilience is for everyone.
+        description: | # this will include new lines to allow paragraphs
+          Technical Architect responsible for defining, implementing, and maintaining a structured solution that meets the clients overall requirements and goals. Application lifecycle management within an agile methodology. Responsible for interpreting requirements, and establishing the scope/task to plan out release sprints. 
+
+          Handling the formulation of the architectural design based on the overall goal and constraints. Supporting developers through mentoring and direction. Verifying the implementation to ensure a successfully delivered product. Overall, helping to design, develop, and deploy successful distributed and service-oriented enterprise applications.
+
+          * Lead teams developing a modernized application for an existing product. Microservice architecture using Java APIs and Angular user interfaces. 
+          * Recommended appropriate technical solutions by understand business challenges. 
+          * Modernized pipeline using containers and multiple environments to validate code. 
+          * Automation testing using Cypress. 
+          * Implemented feature flagging for testing and rolling out new features to users. 
+          * Oversaw production support teams for a global Azure-based application that assisted in public company audits, for a Big 4 audit company.
+          * Back End development in C#, Web API, Azure SQL, Service Bus and utilized a microservices architecture. Front end in JavaScript using the React framework. 
+          * Monitored metrics used Application Insights and Azure Portal. 
+          * Directed a team capable of quick turnaround from production issue identified to solution promoted into production. 
+          * Expanded the existing system to identify unrealized data issues and have the system resolve these issues before user were blocked from work. 
+          * Coordinated the team tasked to interface with the client's existing teams to give guidance, implement technical solutions to address production issues, and suggested improvements in the existing code base.
+
+      - layout: left
+        title: Kforce Global Solutions, Inc. · Contract
+        link: https://www.kforce.com
+        link_text: kforce.com
+        sub_title: IT Associate
+        caption: March 2016 - March 2017
+        # quote: >
+        #   Resilience is for everyone.
+        description: | # this will include new lines to allow paragraphs
+          Contracted to work for AgileThought for manual testing and entry level application development.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: University of Central Florida
+        caption: 2009 - 2013
+        sub_title: Bachelor's Degree, Multi/Interdisciplinary Studies
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Activities and societies: Volunteer UCF, International Medical Outreach.
+          Areas of Study: Life & Biomedical Sciences and Behavioral & Social Psychology. 
+
+  - title: Publications
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Agile Coaches' Corner Podcast
+        caption: "2019"
+        sub_title: Logan Butler on Conflict with Civility
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Actively participated in a podcast aimed at exploring and navigating conflict management strategies within professional settings. Drawing on my diverse professional experiences, ranging from my tenure as a high school teacher to my current role as a Senior Developer and Scrum Master, I provided insightful, practicable solutions for conflict resolution and team building. My contributions emphasized the power of civility in maintaining positive relationships, fostering transparency, and cultivating bravery within team environments. This series showcased my ability to transfer skills between disparate fields, demonstrating adaptability, leadership, and conflict resolution.
+
+          [Listen Here](https://www.stitcher.com/show/agile-coaches-corner/episode/logan-butler-on-conflict-with-civility-62673916)
+
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
